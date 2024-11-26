@@ -1,0 +1,19 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: golang123-svc
+  namespace: golang123
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: golang123.diegoluisi.eti.br
+  labels:
+    app: golang123
+    version: 0.0.1
+    backstage.io/kubernetes-id: golang123
+spec:
+  type: ClusterIP
+  ports:
+  - name: tcp-node
+    port: 8080
+  selector:
+    app: golang123

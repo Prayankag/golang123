@@ -1,0 +1,11 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: golang123
+resources:
+  - ns.yaml
+  - golang123-quota.yaml
+  - golang123-deploy.yaml
+  - golang123-svc.yaml
+  - golang123-vs.yaml
+  - golang123-hpa.yaml
