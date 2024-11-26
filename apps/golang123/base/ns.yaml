@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: golang123
+  labels:
+    kubernetes.io/metadata.name: golang123
+    backstage.io/kubernetes-id: golang123
+    istio-injection: enabled
+spec:
+  finalizers:
+  - kubernetes

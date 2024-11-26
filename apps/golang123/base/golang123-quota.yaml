@@ -1,0 +1,16 @@
+---
+kind: ResourceQuota
+apiVersion: v1
+metadata:
+  name: golang123-quota
+  namespace: golang123
+  labels:
+    kubernetes.io/metadata.name: golang123
+    backstage.io/kubernetes-id: golang123
+    istio-injection: enabled
+spec:
+  hard:
+    requests.cpu: "1"
+    requests.memory: 1Gi
+    limits.cpu: "2"
+    limits.memory: 2Gi

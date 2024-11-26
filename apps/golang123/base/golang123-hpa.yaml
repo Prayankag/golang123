@@ -1,0 +1,16 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: golang123-hpa
+  labels:
+    app: golang123
+    version: 0.0.1
+    backstage.io/kubernetes-id: golang123
+spec:
+ scaleTargetRef:
+   apiVersion: apps/v1
+   kind: Deployment
+   name: golang123
+ minReplicas: 1
+ maxReplicas: 4
+ targetCPUUtilizationPercentage: 75

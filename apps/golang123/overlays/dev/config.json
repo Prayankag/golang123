@@ -1,0 +1,11 @@
+{
+  "appName": "golang123",
+  "userGivenName": "golang123",
+  "destNamespace": "golang123",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/golang123/overlays/dev",
+  "srcRepoURL": "https://github.com/diegoluisi/argo.git",
+  "srcTargetRevision": "",
+  "CreateNamespace": true,
+  "labels": null
+}
